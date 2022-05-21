@@ -1,6 +1,0 @@
-﻿  main.cpp
-C:\Users\Катя\Documents\Универ\Учеба\ЯМП\lab\l1\kroshko.pmi.2.4\kroshko.pmi3.laba4\build\Matrix.h(172,43): warning C4566: символ, представленный универсальным именем символа "\u00F1", невозможно представить в текущей кодовой странице (1251)
-  Matrix.cpp
-C:\Users\Катя\Documents\Универ\Учеба\ЯМП\lab\l1\kroshko.pmi.2.4\kroshko.pmi3.laba4\build\Matrix.h(172,43): warning C4566: символ, представленный универсальным именем символа "\u00F1", невозможно представить в текущей кодовой странице (1251)
-  Создание кода...
-  Laba.vcxproj -> C:\Users\Катя\Documents\Универ\Учеба\ЯМП\lab\l1\kroshko.pmi.2.4\kroshko.pmi3.laba4\build\Debug\Laba.exe
