@@ -1,0 +1,10 @@
+^C:\USERS\КАТЯ\DOCUMENTS\УНИВЕР\УЧЕБА\ЯМП\LAB\L1\KROSHKO.PMI.2.4\KROSHKO.PMI3.LABA4\BUILD\CMAKEFILES\1AB59F7132D779000AEA2B2945E6A7FF\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Катя/Documents/Универ/Учеба/ЯМП/lab/l1/kroshko.pmi.2.4/kroshko.pmi3.laba4/build -BC:/Users/Катя/Documents/Универ/Учеба/ЯМП/lab/l1/kroshko.pmi.2.4/kroshko.pmi3.laba4/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Катя/Documents/Универ/Учеба/ЯМП/lab/l1/kroshko.pmi.2.4/kroshko.pmi3.laba4/build/Laba1.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

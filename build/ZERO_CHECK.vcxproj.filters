@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Катя\Documents\Универ\Учеба\ЯМП\lab\l1\kroshko.pmi.2.4\kroshko.pmi3.laba4\build\CMakeFiles\1ab59f7132d779000aea2b2945e6a7ff\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{80B55151-9F79-3544-941B-460A35993F83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
