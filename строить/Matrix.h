@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include "Vector.h"
 #include <iostream>
 template < class Type>
@@ -79,11 +79,10 @@ inline TMatrix<Type>::~TMatrix()
 
 }
 
-
 template<class Type>
 inline TMatrix<Type>::TMatrix(int _length) : TVector(_length)
 {
-	width = _width;
+	width = _length;
 	this->data = new TVector<Type>[width];
 	for (int q = 0; q < width; q++)
 		this->data[q] = TVector<Type>(this->length);
@@ -136,7 +135,7 @@ inline int TMatrix<Type>::GetLength()
 template<class Type>
 inline TMatrix<Type> TMatrix<Type>::operator+(const TMatrix& _matrix)
 {
-	if (this->length != _matrix.length || width != _matrix.width) throw "the length or width of first matrix isn't equals to length of width of second matrix";
+	if (this->length != _matrix.length || width != _matrix.width) throw "the length error";
 	TMatrix result(*this);
 	for (int q = 0; q < width; q++)
 		for (int w = 0; w < this->length; w++)
@@ -147,7 +146,7 @@ inline TMatrix<Type> TMatrix<Type>::operator+(const TMatrix& _matrix)
 template<class Type>
 inline TMatrix<Type> TMatrix<Type>::operator-(const TMatrix<Type>& _matrix)
 {
-	if (this->length != _matrix.length || width != _matrix.width) throw "the length or width of first matrix isn't equals to length of width of second matrix";
+	if (this->length != _matrix.length || width != _matrix.width) throw "the length error";
 	TMatrix result(*this);
 	for (int q = 0; q < width; q++)
 		for (int w = 0; w < this->length; w++)
@@ -159,8 +158,7 @@ template<class Type>
 inline TMatrix<Type>& TMatrix<Type>::operator=(const TMatrix<Type>& _matrix)
 {
 	if (this == &_matrix) return *this;
-	if (this->length != _matrix.length || width != _matrix.width) throw "the length or width of first matrix isn't equals to length of width of second matrix";
-	for (int q = 0; q < width; q++)
+	if (this->length != _matrix.length || width != _matrix.width) throw "the length error";
 		for (int w = 0; w < this->length; w++)
 			data[q][w] = _matrix.data[q][w];
 	return *this;
@@ -169,7 +167,7 @@ inline TMatrix<Type>& TMatrix<Type>::operator=(const TMatrix<Type>& _matrix)
 template<class Type>
 inline TMatrix<Type> TMatrix<Type>::operator*(const TMatrix<Type>& _matrix)
 {
-	if (this->length != _matrix.width) throw "size of matriñes aren't correct";
+	if (this->length != _matrix.width) throw "size of matrines aren't correct";
 	TMatrix<Type> result(_matrix.length, width, 0);
 	for (int i = 0; i < width; i++)
 	{
